@@ -392,6 +392,101 @@ Hero Css End
 ============================
 */
 
+
+.ons-assortiment-section {
+	position: relative;
+	padding-top: 100px;
+	padding-left: 175px;
+}
+.ons-assortiment-section:before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 771px;
+  background-image: url(assets/images/gray-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  max-width: 90%;
+}
+.sec-subtitle {
+  color: var(--primary);
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+.section-title h2 {
+  color: #343434;
+  font-size: 42px;
+}
+.assortiment-slide-wrapper {
+	margin-top: 70px;
+  padding-left: 200px;
+}
+.slide-bg {
+	height: 650px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.slide-bg {
+  position: relative;
+}
+.slide-bg h5 {
+  position: absolute;
+  bottom: 35px;
+  left: 0;
+  width: 100%;
+  color: #343434;
+  background-color: var(--primary);
+  padding: 20px;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  opacity: .8;
+}
+.assortiment-slide-wrapper .slick-slider {
+  margin:0 -15px;
+}
+.assortiment-slide-wrapper .slick-slide {
+	margin-right: 15px;
+}
+.assortiment-slide-wrapper .slick-arrow {
+	position: absolute;
+	top: -50px;
+	right: 20%;
+	font-size: 20px;
+	color: gray;
+	cursor: pointer;
+	transition: 0.3s all ease;
+}
+.assortiment-slide-wrapper .slick-arrow:hover {
+  color: var(--red);
+}
+.assortiment-slide-wrapper .priv_arrow {
+  margin-right: 50px;
+}
+.assortiment-slide-active{
+  border: 1px solid #000000;
+  padding: 12px;
+}
+@media only screen and (max-width:1199px) {
+  .assortiment-slide-wrapper {
+    padding-left: 70px;
+  }
+}
+@media only screen and (max-width:991px) {
+  .assortiment-slide-wrapper {
+    padding-left: 78px;
+  }
+}
+@media only screen and (max-width:767px) {
+	.ons-assortiment-section, .assortiment-slide-wrapper {
+    padding-left: 20px;
+  }
+}
 /*
 ============================
 Footer Css Start
