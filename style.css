@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&family=Oswald:wght@700&family=Poppins:wght@400;500&display=swap');
+
+:root {
+  --primary: #00C1D5;
+  --secondery: #343434;
+  --red: #D50032;
+  --black: #000000;
+  --white-color: #fff;
+}
+
+/*
+===============================
+Global CSS START
+===============================
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--black);
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 28px;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  min-width: 320px;
+  scroll-behavior: smooth;
+}
+
+img, svg {
+	height: auto;
+	max-width: 100%;
+	vertical-align: middle;
+  transition: 0.3s all ease;
+}
+
+a,
+.button {
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+a:focus,
+.button:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+a:focus,
+a:hover,
+.portfolio-cat a:hover,
+.footer -menu li a:hover {
+  color: var(--text-white);
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  line-height: 1.1;
+  font-family: "Oswald", sans-serif;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+}
+
+h4,
+h5 {
+  font-weight: 600;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: inherit;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+p:last-of-type {
+	margin: 0;
+}
+
+/*
+==========================
+Main Btn Css Start
+==========================
+*/
+
+.site-btn {
+  font-size: 15px;
+  font-weight: 400;
+  padding: 10px 30px;
+  display: inline-block;
+  transition: 0.3s all ease;
+  border-radius: 30px;
+  color: var(--white-color);
+  background-color: var(--black);
+  font-family: 'Poppins', sans-serif;
+}
+
+.site-btn:hover {
+  color: var(--secondery);
+}
+
+/*
+=========================
+Main Btn Css End 
+=========================
+*/
+
+#page {
+  overflow: hidden;
+}
+
+@media screen and (min-width: 1360px) {
+  .container {
+    max-width: 1390px;
+  }
+  .container-large {
+    max-width: 1540px;
+  }
+}
+/*
+============================
+Global CSS END
+============================
+*/
+
+/*
+============================
+Header Css Start
+============================
+*/
+
+.navbar-brand {
+	padding: 0 20px 32px 20px;
+	border-radius: 50px;
+	background-color: var(--white-color);
+	position: relative !important;
+	top: 40px !important;
+	z-index: 2;
+}
+.navbar-brand img {
+ margin: 0 20px;
+}
+.navbar-nav {
+  align-items: center;
+}
+.navbar .navbar-nav .nav-link {
+  color: var(--secondery);
+  padding: 0 30px;
+  font-size: 15px;
+  font-weight: 500;
+  transition: 0.3s all ease;
+  font-family: "Poppins", sans-serif;
+}
+.navbar .navbar-nav .nav-link:hover {
+  color: var(--primary);
+}
+.navbar-nav .header-btn {
+  font-size: 14px;
+	color: var(--red);
+	padding: 8px 22px;
+	border-radius: 40px;
+	font-weight: 500;
+  text-decoration: none;
+  border: 1px solid #D50032;
+	text-transform: capitalize;
+}
+@media screen and (max-width: 1360px) {
+  .navbar .navbar-nav .nav-link {
+    padding: 0 10px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .navbar .navbar-nav .nav-link {
+    padding: 0 10px;
+    font-size: 13px;
+  }
+  .navbar-brand img {
+    max-width: 100px;
+  }
+  .navbar-nav .header-btn {
+    font-size: 13px;
+    padding: 7px 15px;
+  }
+}
+@media only screen and (max-width:991px) {
+  .navbar .navbar-nav .nav-link {
+    color: var(--white-color);
+    font-size: 12px;
+    padding: 8px 0;
+  }
+  .site-header .navbar {
+    padding-bottom: 0;
+  }
+  .site-header .navbar-nav{
+    padding-bottom: 20px;
+    background-color: var(--secondery);
+  }
+  .navbar-brand {
+    padding: 0 20px 32px 20px;
+    border-radius: 50px;
+    background-color: var(--white-color);
+    position: initial !important;
+    top: 0px !important;
+  }
+}
+/*
+============================
+Header Css End
+============================
+*/
+
+/*
+============================
+Hero Css Start
+============================
+*/
+.hero-section .hero-bg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.hero-bg:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100px;
+  height: 100px;
+  background-color: var(--white-color);
+}
+.hero-section .home-bg {
+	padding-top: 200px;
+  padding-bottom: 300px;
+	padding-left: 175px;
+}
+.hero-content {
+	max-width: 620px;
+}
+.hero-content h1 {
+  color: #fff;
+  font-size: 85px;
+}
+.hero-content p {
+  color: #fff;
+  font-size: 20px;
+  margin-top: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+.icon-box-inner {
+	width: 100%;
+	position: absolute;
+	max-width: 65%;
+	right: 0;
+	bottom: 0;
+	background: var(--white-color);
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+  column-gap: 20px;
+}
+.icon-box {
+  text-align: center;
+  padding: 20px;
+  transition: 0.3s all ease;
+  position: relative;
+}
+.icon-box:hover,
+.icon-box.box-icon svg{
+  color: #fff;
+  background-color:var(--red);
+}
+.icon-box:hover p {
+	color: #fff;
+}
+.icon-box p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #343434;
+}
+.box-icon {
+  margin-bottom: 15px;
+}
+.icon-box:not(:last-child):after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 1px;
+  height: 80%;
+  background: #000000;
+  opacity: .5;
+  transform: translateY(-50%);
+}
+.icon-box:hover.icon-box:not(:last-child):after {
+  background: var(--red);
+}
+@media screen and (max-width: 1199px) {
+  .hero-content h1 {
+    font-size: 75px;
+  }
+  .hero-content p {
+    font-size: 16px;
+  }
+  .icon-box-inner {
+    max-width: 70%;
+    column-gap: 0;
+  }
+  .icon-box p {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width:991px) {
+  .hero-section .home-bg {
+    padding-top: 100px;
+    padding-bottom: 380px;
+    padding-left: 100px;
+  }
+  .hero-content h1 {
+    font-size: 60px;
+  }
+  .hero-content p {
+    font-size: 15px;
+  }
+  .hero-bg::after {
+    width: 80px;
+    height: 80px;
+  }
+  .icon-box-inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .icon-box p {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width:767px) {
+  .hero-section .home-bg {
+    padding-top: 55px;
+    padding-bottom: 0;
+    padding-left: 20px;
+  }
+  .hero-bg:after {
+    display: none;
+  }
+  .hero-content h1 {
+    font-size: 40px;
+  }
+  .hero-content p {
+    font-size: 14px;
+    margin-top: 12px;
+  }
+  .icon-box-inner {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .icon-box-inner {
+    max-width: 100%;
+    column-gap: 0;
+    position: initial;
+    margin-top: 25px;
+  }
+  .icon-box:not(:last-child)::after {
+    display: none;
+  }
+ }
+/*
+============================
+Hero Css End
+============================
+*/
+
+/*
+============================
+Footer Css Start
+============================
+*/
+
+
+
+/*
+============================
+Footer Css End
+============================
+*/
