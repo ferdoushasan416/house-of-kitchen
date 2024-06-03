@@ -556,18 +556,26 @@ Van House Css Start
     font-size: 18px;
   }
 }
-@media only screen and (max-width:767px) {
+@media only screen and (max-width:991px) {
   .van-house-about-section {
-    padding: 80px 0;
+    padding: 100px 0;
   }
   .about-image {
     margin-bottom: 25px;
+  }
+}
+@media only screen and (max-width:767px) {
+  .van-house-about-section {
+    padding: 80px 0;
   }
   .van-house-about-section .site-btn {
     margin-top: 40px;
   }
   .section-title h2 {
     font-size: 25px;
+  }
+  .site-btn {
+      font-size: 15px;
   }
 }
 /*
@@ -589,6 +597,11 @@ Brand Logo Css Start
   gap: 20px;
   margin-top: 40px;
 }
+@media only screen and (max-width:991px) {
+  .brand-single-logo {
+    max-width: 20%;
+  }
+}
 @media only screen and (max-width:767px) {
   .brand-logo-wrapper {
     justify-content: center;
@@ -597,6 +610,7 @@ Brand Logo Css Start
     max-width: 112px;
   }
 }
+
 /*
 ============================
 Brand Logo Css End
@@ -611,9 +625,19 @@ B2b Css Start
 .our-klant-section {
 	padding-bottom: 100px;
 }
+@media only screen and (max-width:991px) {
+  .our-klant-section {
+    padding-bottom: 80px;
+  }
+}
+@media only screen and (max-width:767px) {
+  .our-klant-section {
+    padding-bottom: 50px;
+  }
+}
 .b2b-portaal-section {
 	padding-top: 80px;
-	padding-bottom: 100px;
+	padding-bottom: 200px;
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -624,7 +648,7 @@ B2b Css Start
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%,-50%);
-	margin-top: 72px;
+	margin-top: 40px;
 }
 .b2b-portaal-section .section-title h2 {
   color: #fff;
@@ -656,13 +680,94 @@ B2b Css Start
 	display: block;
 	color: #fff;
 }
+@media only screen and (max-width:1199px) {
+  .service-box span {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .middle-image {
+    max-width: 430px;
+  }
+}
+@media only screen and (max-width:991px) {
+  .b2b-portaal-section {
+    padding-bottom: 100px;
+  }
+  .service-icon {
+    width: 75px;
+    height: 76px;
+  }
+  .service-box span {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .middle-image {
+    max-width: 300px;
+  }
+}
+@media only screen and (max-width:767px) {
+  .b2b-portaal-section {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+  .b2b-portaal-section .section-title h2 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .service-box {
+    margin-top: 40px;
+    max-width: 100%;
+  }
+  .service-box.box-right {
+    float: initial;
+  }
+  .middle-image {
+    position: initial;
+    transform: initial;
+    width: 100%;
+  }
+  .service-box span {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .service-box span br {
+    display: none;
+  }
+}
 /*
 ============================
 B2b Css End
 ============================
 */
 
-
+/*
+============================
+Laat Ons Team Css Start
+============================
+*/
+.laat-ons-team {
+  padding-top: 90px;
+  padding-bottom: 120px;
+}
+.laat-ons-team .section-title p {
+  margin: 50px 0;
+}
+@media only screen and (max-width:991px) {
+  .laat-ons-team {
+    padding-top: 50px;
+    padding-bottom: 80px;
+  }
+}
+@media only screen and (max-width:767px) {
+  .laat-ons-team .section-title p {
+    margin: 30px 0;
+  }
+}
+/*
+============================
+Laat Ons Team Css End
+============================
+*/
 /*
 ============================
 Footer Css Start
