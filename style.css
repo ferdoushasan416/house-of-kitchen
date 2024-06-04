@@ -191,6 +191,11 @@ Header Css Start
   text-decoration: none;
   border: 1px solid #D50032;
 	text-transform: capitalize;
+  transition: 0.3s all ease;
+}
+.navbar-nav .header-btn:hover {
+  color: #fff;
+  background-color: var(--red);
 }
 @media screen and (max-width: 1360px) {
   .navbar .navbar-nav .nav-link {
@@ -480,7 +485,16 @@ Hero Css End
 	border: 1px solid #000000;
 	padding: 12px 0 0 12px;
 }
+@media only screen and (max-width:1400px) {
+  .assortiment-slide-wrapper {
+    margin-left: 150px;
+  }
+}
 @media only screen and (max-width:1199px) {
+  .ons-assortiment-section::before {
+    max-width: 100%;
+    
+  }
   .assortiment-slide-wrapper {
     margin-left: 150px;
   }
